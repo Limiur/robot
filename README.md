@@ -27,8 +27,4 @@ python demo.py
 ```
 ## 文件夹说明
 ### DynamicProgramming
-#### DynamicProgramming.py
-手写编辑的动态规划代码
-#### DynamicProgramming(AI).py
-用deepseek生成了一份代码
-
+一份手写编辑的动态规划代码和一份用deepseek生成的代码
