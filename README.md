@@ -25,14 +25,10 @@ pip install -r requirements.txt
 ```bash
 python demo.py
 ```
-## 新增模块说明
-### DynamicProgramming.py
+## 文件夹说明
+### DynamicProgramming
+#### DynamicProgramming.py
 手写编辑的动态规划代码
-```bash
-python DynamicProgramming.py
-```
-### DynamicProgramming(AI).py
+#### DynamicProgramming(AI).py
 用deepseek生成了一份代码
-```bash
-python DynamicProgramming.py
-```
+
