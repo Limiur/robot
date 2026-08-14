@@ -27,8 +27,12 @@ python demo.py
 ```
 ## 新增模块说明
 ### DynamicProgramming.py
-求解代价函数和输出
-
+手写编辑的动态规划代码
+```bash
+python DynamicProgramming.py
+```
+### DynamicProgramming(AI).py
+用deepseek生成了一份代码
 ```bash
 python DynamicProgramming.py
 ```
