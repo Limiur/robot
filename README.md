@@ -1,7 +1,7 @@
 # robot 控制算法项目
 ## 环境依赖
-Python 3.12
-numpy / scipy 数值矩阵运算库
+- Python 3.12
+- numpy / scipy 数值矩阵运算库
 
 ## 本地部署步骤
 1. 克隆仓库
