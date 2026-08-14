@@ -4,16 +4,16 @@
 - numpy / scipy 数值矩阵运算库
 
 ## 本地部署步骤
-1. 克隆仓库
+- 克隆仓库
 git clone https://github.com/Limiur/robot.git
 cd robot
-2. 创建虚拟环境
+- 创建虚拟环境
 python -m venv .venv
 
 # Windows环境
-3. 安装依赖
+- 安装依赖
 pip install -r requirements.txt
-4. 激活环境
+- 激活环境
 .venv\Scripts\activate 
-5. 运行代码
+- 运行代码
 python demo.py
