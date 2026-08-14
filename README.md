@@ -8,12 +8,12 @@ numpy / scipy 数值矩阵运算库
 git clone https://github.com/Limiur/robot.git
 cd robot
 2. 创建虚拟环境
-python -m venv venv
+python -m venv .venv
 
-# Windows激活环境
-venv\Scripts\activate 
-
+# Windows环境
 3. 安装依赖
 pip install -r requirements.txt
-4. 运行代码
+4. 激活环境
+.venv\Scripts\activate 
+5. 运行代码
 python demo.py
