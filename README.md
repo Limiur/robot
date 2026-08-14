@@ -3,7 +3,7 @@
 - Python 3.12
 - numpy / scipy 数值矩阵运算库
 
-## 本地部署步骤
+## Windows本地部署
 - 克隆仓库
 ```bash
 git clone https://github.com/Limiur/robot.git
@@ -13,7 +13,6 @@ cd robot
 ```bash
 python -m venv .venv
 ```
-# Windows环境
 - 安装依赖
 ```bash
 pip install -r requirements.txt
@@ -25,4 +24,12 @@ pip install -r requirements.txt
 - 运行代码
 ```bash
 python demo.py
+```
+## 新增模块说明
+### lqr_solver.py
+实现LQR最优控制器求解，输入状态空间矩阵A/B/Q/R，返回反馈增益矩阵K。
+
+使用示例：
+```bash
+python lqr_solver.py
 ```
