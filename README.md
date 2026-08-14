@@ -7,10 +7,10 @@
 - 克隆仓库
 ```bash
 git clone https://github.com/Limiur/robot.git
-cd robot
 ```
 - 创建虚拟环境
 ```bash
+cd robot
 python -m venv .venv
 ```
 - 安装依赖
@@ -26,10 +26,9 @@ pip install -r requirements.txt
 python demo.py
 ```
 ## 新增模块说明
-### lqr_solver.py
-实现LQR最优控制器求解，输入状态空间矩阵A/B/Q/R，返回反馈增益矩阵K。
+### DynamicProgramming.py
+求解代价函数和输出
 
-使用示例：
 ```bash
-python lqr_solver.py
+python DynamicProgramming.py
 ```
