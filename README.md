@@ -28,3 +28,5 @@ python demo.py
 ## 文件夹说明
 ### DynamicProgramming
 一份手写编辑的动态规划代码和一份用deepseek生成的代码
+### LinearQuadraticRegulator
+使用Copilot Agent生成的质量弹簧阻尼模型下是否使用LQR的对比
