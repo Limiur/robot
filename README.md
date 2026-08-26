@@ -1,7 +1,7 @@
 # robot 控制算法项目
 ## 环境依赖
 - Python 3.12
-- numpy / scipy 数值矩阵运算库
+- numpy / control / matplotlib
 
 ## Windows本地部署
 - 克隆仓库
