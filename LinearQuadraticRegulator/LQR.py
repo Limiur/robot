@@ -22,24 +22,26 @@ def main():
 	print("A =\n", A)
 	print("B =\n", B)
 
-	dt = 0.01
+	dt = 0.1  # 离散化时间步长为 0.1 秒。
 	# 使用零阶保持器将连续系统离散化，便于数字控制器实现。
 	discrete_system = ct.c2d(system, dt, method="zoh")
 	print("离散模型状态方程：x[k + 1] = A_d x[k] + B_d u[k]")
-	print("A_d =\n", np.asarray(discrete_system.A))
-	print("B_d =\n", np.asarray(discrete_system.B))
+	print("A_d =\n", discrete_system.A)
+	print("B_d =\n", discrete_system.B)
 
-	time = np.arange(0.0, 20.0 + dt, dt)
-	x0 = [1.0, 0.0]
+	time = np.arange(0.0, 20.0, dt)
+	x0 = np.array([1.0, 0.0])  # 初始位移为 1.0，初始速度为 0.0。
 
 	# 使用离散系统在无输入条件下计算初始响应。
 	response = ct.initial_response(discrete_system, T=time, X0=x0)
-	states = np.asarray(response.states)
+	states = response.x
 
 	# 设计离散 LQR 控制器，并使用状态反馈逐步计算控制输入。
 	Q = np.diag([10.0, 1.0])
 	R = np.array([[0.1]])
-	K, _, _ = ct.dlqr(discrete_system, Q, R)
+	K, S, E = ct.dlqr(discrete_system, Q, R)
+	print("离散 LQR 控制器增益矩阵 K =\n", K)
+	print("离散 LQR 离散 Riccati 方程的解 S =\n", S)
 	controlled_states = np.zeros((2, len(time)))
 	controlled_states[:, 0] = x0
 	controlled_inputs = np.zeros(len(time) - 1)
