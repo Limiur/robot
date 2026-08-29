@@ -29,4 +29,5 @@ python demo.py
 ### DynamicProgramming
 一份手写编辑的动态规划代码和一份用deepseek生成的代码
 ### LinearQuadraticRegulator
-使用Copilot Agent生成的质量弹簧阻尼模型下是否使用LQR的对比
+使用Copilot Agent生成的质量弹簧阻尼模型下是否使用LQR的对比  
+补充一个有限时域内的LQR问题，代码暂时空缺
